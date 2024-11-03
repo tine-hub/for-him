@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hi Pogi</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'georgia', sans-serif;
+      background: linear-gradient(135deg,#b993d6 0%, 
+      #f3d1f4 50%, #fdfb94 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      color: #4a275e;
+      padding: 20px;
+    }
+    .letter-container {
+      background-color: rgba(255, 255, 255, 0.9);
+      width: 80%;
+      max-width: 600px;
+      border-radius: 15px;
+      padding: 30px 40px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      overflow: hidden;
+    }
+    .message {
+      opacity: 0;
+      transition: opacity 2s ease-in;
+      font-size: 1.1em;
+      line-height: 1.6;
+      margin-top: 20px;
+    }
+    .message.show {
+      opacity: 1;
+    }
+    .heart {
+      font-size: 50px;
+      color: #a64ca6;
+      margin-bottom: 15px;
+    }
+    p {
+      color: #4a275e;
+    }
+  </style>
+</head>
+<body>
+  <div class="letter-container">
+    <div class="heart">&#10084</div>
+    <h2>To My Baby</h2>
+    <p>I've poured my heart into this letter,
+      hoping it brings you even a fraction of the joy
+      you bring into my life
+    </p>
+    <!--Hidden Message-->
+    <p class="message" id="hiddenMessage">
+      My Bebi, as is sit here doing this, my thoughts
+      are filled with memories of us. Every moment we've spent
+      together feels like home. From  the first time we met to
+      kiss lol. You have this beautiful way of bringing light of 
+      my life, like the warm hues of the sunset I've been looking at
+      the most perfect day. When I'm with you i feel a sense of peace
+      and happiness that i never knew was possible.<br><br>
+      Thank You for being my rock, my cheerleader, and my bestfriend.
+      You've shown me kindness and love beyond words, and for that, 
+      I am eternally grateful. I want you to know that wherever life 
+      take us. I'll always be by your side, holding you hand through
+      all of it. You are not just my partner, you're my world,
+      my inspiration, and my forever<br><br>
+        With all my love,<br>
+        Cristine<br>
+    </p>
+  </div>
+  <script>
+    setTimeout(function() {
+      var message = 
+      document.getElementById('hiddenMessage');
+        message.classList.add('show');}
+        , 4000);
+    
+  </script>
+</body>
+</html>
